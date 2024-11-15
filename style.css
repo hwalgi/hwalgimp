@@ -1,11 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.micro-5-regular {
+	font-family: "Micro 5", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.space-mono-regular {
+	font-family: "Space Mono", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.space-mono-bold {
+	font-family: "Space Mono", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.space-mono-regular-italic {
+	font-family: "Space Mono", serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.space-mono-bold-italic {
+	font-family: "Space Mono", serif;
+	font-weight: 700;
+	font-style: italic;
+}
+  
+  
 :root {
 	--rad:10px;
 	--spec-black: rgb(14, 14, 14);
-	--spec-accent:rgb(46, 13, 105);
+	--spec-orange:rgb(209, 67, 15);
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Space Mono";
 	margin: 0;
 	padding: 0;
 	background-color: var(--spec-black);
@@ -13,7 +45,7 @@ body {
 }
 
 h1, h2 {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Micro 5";
 	margin:0;
 }
 h1 {
@@ -33,7 +65,7 @@ h2 {
 	margin:0 10px 0 10px;
 }
 .nav > h1 {
-	color: var(--spec-accent);
+	color: var(--spec-orange);
 }
 .nav > h1 > a {
 	color: inherit;
@@ -46,7 +78,6 @@ h2 {
 .nav > a {
 	position: relative;
 	text-decoration: none;
-	padding: 5px;
 }
 .nav > a::after {
 	content: "";
@@ -55,7 +86,7 @@ h2 {
 	bottom: 0;
 	translate: -50% 0;
 	width: 100%;
-	background-color: var(--spec-accent);
+	background-color: var(--spec-orange);
 	height: 40%;
 	z-index: -1;
 	transition: 0.2s;
@@ -97,8 +128,8 @@ h2 {
 }
 .cta {
 	display: block;
-	background-color: var(--spec-accent);
-	border: solid 1px var(--spec-accent);
+	background-color: var(--spec-orange);
+	border: solid 1px var(--spec-orange);
 	padding: 10px;
 	border-radius: 100vmin;
 	width: fit-content;
@@ -109,7 +140,11 @@ h2 {
 }
 .cta:hover {
 	background-color: white;
-	color: var(--spec-accent);
+	color: var(--spec-orange);
+}
+.cta::after {
+	content: "->";
+	margin-left: 10px;
 }
 
 
@@ -188,11 +223,6 @@ h2 {
 	text-align: center;
 	background: transparent;
 }
-/* @media (max-width:720px) {
-	.card {
-		width: 100% !important;
-	}
-} */
 
 a {
 	color: white;
@@ -201,9 +231,4 @@ a {
 footer {
 	font-size: 11px;
 	margin:10px;
-}
-
-.cta::after {
-	content: "→";
-	margin-left: 10px;
 }

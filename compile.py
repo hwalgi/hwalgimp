@@ -109,6 +109,7 @@ for dir in subs.keys():
                 ))
             }
 		</div>
+		<footer>{name} is an imprint of <a href="https://www.hwalgi.org">Hwalgi</a>, a nonprofit fiscally sponsored by The Hack Foundation (d.b.a. Hack Club), a 501(c)(3) nonprofit (EIN: 81-2908499).</footer>
 	</div>
 	<script src="../app.js"></script>
 </body>
@@ -155,6 +156,7 @@ with open('index.html', 'w') as homepage:
                 ))
             }
 		</div>
+		<footer>{name} is an imprint of <a href="https://www.hwalgi.org">Hwalgi</a>, a nonprofit fiscally sponsored by The Hack Foundation (d.b.a. Hack Club), a 501(c)(3) nonprofit (EIN: 81-2908499).</footer>
 	</div>
 	<script src="app.js"></script>
 </body>
